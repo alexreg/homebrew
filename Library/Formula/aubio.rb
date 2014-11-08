@@ -26,7 +26,7 @@ class Aubio < Formula
   depends_on 'libsndfile' => :optional
   depends_on 'libsamplerate' => :optional
   depends_on 'fftw' => :optional
-  depends_on 'jack' => :optional
+  depends_on JackDependency => :optional
 
   if build.with? 'python'
     depends_on 'numpy' => :python
